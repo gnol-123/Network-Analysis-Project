@@ -25,10 +25,10 @@ os.environ["X_API_KEY"] = api_key
 
 TOKEN = os.getenv("X_API_KEY")
 
-QUERY = "(#metgala OR #metgala2026) lang:en -is:retweet"
+QUERY = "(#metgala OR #metgala2026) lang:en -is:retweet min_faves:10"
 
 START_TIME = datetime(2026, 5, 3, 0, 0, 0, tzinfo=timezone.utc)
-END_TIME   = datetime(2026, 5, 9, 0, 0, 0, tzinfo=timezone.utc)
+END_TIME   = datetime(2026, 5, 5, 0, 0, 0, tzinfo=timezone.utc)
 
 MAX_RESULT_PER_PAGE = 100
 TOTAL_TWEETS = 10
@@ -46,18 +46,13 @@ TWEET_FIELDS = [
 ]
 
 USER_FIELDS = [
-    "id", "name", "username",
+    "id", "username",
     "public_metrics",
-    "verified",
-    "description",
+    "verified"
 ]
 
 EXPANSIONS = [
     "author_id",
-    "referenced_tweets.id",
-    "referenced_tweets.id.author_id",
-    "in_reply_to_user_id",
-    "entities.mentions.username",
 ]
 
 # Initialise Client ==========================================================================================================================================================================
@@ -128,13 +123,9 @@ def fetchData(query, tweet_limit):
                 "text":                 tweet.text,
                 "lang":                 tweet.lang,
 
-                "author_id":            str(tweet.author_id),
-                "author_name":          author.name     if author else None,
-                "author_username":      author.username if author else None,
-                "author_followers":     author.public_metrics["followers_count"] if author else None,
-                "author_following":     author.public_metrics["following_count"] if author else None,
-                "author_tweet_count":   author.public_metrics["tweet_count"]     if author else None,
-                "author_verified":      author.verified if author else None,                
+                "author_id":             str(tweet.author_id),
+                "author_username":       author.username if author else None,
+                "author_followers":      author.public_metrics["followers_count"] if author else None,            
 
                 "retweet_count":        tweet.public_metrics["retweet_count"],
                 "reply_count":          tweet.public_metrics["reply_count"],
