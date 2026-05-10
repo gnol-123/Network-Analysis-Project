@@ -27,24 +27,19 @@ class graph:
 
         for video in data["videos"]:
 
-            # Add channel and video nodes
+            # Add channel nodes
             self.G.add_node(video["channelId"], label=video["channelTitle"], node_type="channel")
-            self.G.add_node(video["videoId"],   label=video["title"],        node_type="video",
-                    view_count=video["viewCount"], like_count=video["likeCount"])
-
-            # Channel to Video edge
-            self.G.add_edge(video["channelId"], video["videoId"], edge_type="UPLOADED")
 
             for comment in video["comments"]:
                 # Add user node setdefault pattern avoids overwriting existing nodes
                 if comment["authorId"] not in self.G:
                     self.G.add_node(comment["authorId"], label=comment["author"], node_type="user")
 
-                # User to Video edge
-                # self.G.add_edge(comment["authorId"], comment["videoId"],
-                #         edge_type="COMMENTED_ON",
-                #         weight=max(comment["likeCount"], 1),
-                #         published_at=comment["publishedAt"])
+                # User to Channel edge
+                self.G.add_edge(comment["authorId"], video["channelId"],
+                        edge_type="COMMENTED_ON",
+                        weight=max(comment["likeCount"], 1),
+                        published_at=comment["publishedAt"])
 
                 # User replies edge
                 if comment["isReply"] and comment["replyToAuthorId"]:
