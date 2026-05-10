@@ -36,7 +36,7 @@ class graph:
 
             for comment in video["comments"]:
                 # Add user node setdefault pattern avoids overwriting existing nodes
-                if comment["authorId"] not in G:
+                if comment["authorId"] not in self.G:
                     self.G.add_node(comment["authorId"], label=comment["author"], node_type="user")
 
                 # User to Video edge
@@ -81,7 +81,7 @@ class graph:
             edge["title"] = ""
             edge["width"] = 0.5
             edge["color"] = "#cccccc"
-            
+
         net.set_options("""
         {
         "edges": {
