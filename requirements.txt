@@ -3,4 +3,6 @@ pandas
 json
 datetime
 langdetect
+networkx
 google-api-python-client
+pyvis
