@@ -1,6 +1,5 @@
 tweepy
 pandas
-json
 datetime
 langdetect
 networkx

@@ -6,6 +6,7 @@ from pyvis.network import Network
 proj_root = Path(__file__).parent.parent
 RAW = proj_root / "artifacts" / "youtubeData-metGala.json"
 OUTPUTGRAPH = proj_root / "artifacts" / "graph" / "metgalaNetwork.graphml"
+OUTVISUAL = proj_root / "artifacts" / "visual" / "metgalaNetwork.html"
 
 class graph:
 # INIT ===========================================================================================================
@@ -40,14 +41,14 @@ class graph:
                     self.G.add_node(comment["authorId"], label=comment["author"], node_type="user")
 
                 # User to Video edge
-                self.G.add_edge(comment["authorId"], comment["videoId"],
-                        edge_type="COMMENTED_ON",
-                        weight=max(comment["likeCount"], 1),
-                        published_at=comment["publishedAt"])
+                # self.G.add_edge(comment["authorId"], comment["videoId"],
+                #         edge_type="COMMENTED_ON",
+                #         weight=max(comment["likeCount"], 1),
+                #         published_at=comment["publishedAt"])
 
                 # User replies edge
                 if comment["isReply"] and comment["replyToAuthorId"]:
-                    if comment["replyToAuthorId"] not in G:
+                    if comment["replyToAuthorId"] not in self.G:
                         self.G.add_node(comment["replyToAuthorId"], node_type="user")
                     self.G.add_edge(comment["authorId"], comment["replyToAuthorId"],
                             edge_type="REPLIED_TO",
@@ -100,7 +101,8 @@ class graph:
         }
         """)
 
-        net.show("metgala_graph.html", notebook=False)
+        net.show(str(OUTVISUAL), notebook=False)
+        print(f"Graph saved to: {OUTVISUAL}")
 
 # EXPORT =========================================================================================================================
 
