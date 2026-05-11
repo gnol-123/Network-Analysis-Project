@@ -7,6 +7,7 @@ References:
 - https://www.today.com/popculture/news/met-gala-guest-list-2026-rcna343154
 - https://en.wikipedia.org/wiki/Category:High_fashion_brands
 - https://www.abc.net.au/news/2026-05-05/2026-met-gala-red-carpet-fashion/106641558
+- https://www.vogue.com.au/culture/red-carpet/met-gala-2026-red-carpet-celebrity-fashion/image-gallery/e013f100aadf79a361fb0636c2744b87
 """
 
 SOURCE_URLS = (
@@ -15,6 +16,7 @@ SOURCE_URLS = (
     "https://www.today.com/popculture/news/met-gala-guest-list-2026-rcna343154",
     "https://en.wikipedia.org/wiki/Category:High_fashion_brands",
     "https://www.abc.net.au/news/2026-05-05/2026-met-gala-red-carpet-fashion/106641558",
+    "https://www.vogue.com.au/culture/red-carpet/met-gala-2026-red-carpet-celebrity-fashion/image-gallery/e013f100aadf79a361fb0636c2744b87",
 )
 
 
@@ -305,6 +307,11 @@ MET_GALA_ENTITIES = {
         "type": "celebrity",
         "aliases": ["camila cabello"],
     },
+    "camila_morrone": {
+        "name": "Camila Morrone",
+        "type": "celebrity",
+        "aliases": ["camila morrone"],
+    },
     "cara_delevingne": {
         "name": "Cara Delevingne",
         "type": "celebrity",
@@ -389,6 +396,11 @@ MET_GALA_ENTITIES = {
         "name": "Chase Sui Wonders",
         "type": "celebrity",
         "aliases": ["chase sui wonders"],
+    },
+    "cher": {
+        "name": "Cher",
+        "type": "celebrity",
+        "aliases": ["cher"],
     },
     "chioma_nnadi": {
         "name": "Chioma Nnadi",
@@ -704,6 +716,11 @@ MET_GALA_ENTITIES = {
         "name": "Gina Sanders",
         "type": "celebrity",
         "aliases": ["gina sanders"],
+    },
+    "giovanna_battaglia_engelbert": {
+        "name": "Giovanna Battaglia Engelbert",
+        "type": "celebrity",
+        "aliases": ["giovanna battaglia engelbert"],
     },
     "glenn_martens": {
         "name": "Glenn Martens",
@@ -1165,6 +1182,11 @@ MET_GALA_ENTITIES = {
         "type": "celebrity",
         "aliases": ["luke evans"],
     },
+    "lux_pascal": {
+        "name": "Lux Pascal",
+        "type": "celebrity",
+        "aliases": ["lux pascal"],
+    },
     "madonna": {
         "name": "Madonna",
         "type": "celebrity",
@@ -1199,6 +1221,11 @@ MET_GALA_ENTITIES = {
         "name": "Mark Levine",
         "type": "celebrity",
         "aliases": ["mark levine", "comptroller mark levine"],
+    },
+    "mark_zuckerberg": {
+        "name": "Mark Zuckerberg",
+        "type": "celebrity",
+        "aliases": ["mark zuckerberg"],
     },
     "marta_ortega_perez": {
         "name": "Marta Ortega Perez",
@@ -1414,6 +1441,11 @@ MET_GALA_ENTITIES = {
         "type": "celebrity",
         "aliases": ["princess gauravi kumari of jaipur", "gauravi kumari"],
     },
+    "priscilla_chan": {
+        "name": "Priscilla Chan",
+        "type": "celebrity",
+        "aliases": ["priscilla chan"],
+    },
     "priyanka_chopra": {
         "name": "Priyanka Chopra",
         "type": "celebrity",
@@ -1499,6 +1531,11 @@ MET_GALA_ENTITIES = {
         "type": "celebrity",
         "aliases": ["robert soros"],
     },
+    "roberto_torretta": {
+        "name": "Roberto Torretta",
+        "type": "celebrity",
+        "aliases": ["roberto torretta"],
+    },
     "roger_lynch": {
         "name": "Roger Lynch",
         "type": "celebrity",
@@ -1579,6 +1616,11 @@ MET_GALA_ENTITIES = {
         "type": "celebrity",
         "aliases": ["serena williams"],
     },
+    "sergey_brin": {
+        "name": "Sergey Brin",
+        "type": "celebrity",
+        "aliases": ["sergey brin"],
+    },
     "seth_meyers": {
         "name": "Seth Meyers",
         "type": "celebrity",
@@ -1634,6 +1676,11 @@ MET_GALA_ENTITIES = {
         "type": "celebrity",
         "aliases": ["steve schwarzman"],
     },
+    "stevie_nicks": {
+        "name": "Stevie Nicks",
+        "type": "celebrity",
+        "aliases": ["stevie nicks"],
+    },
     "stewart_butterfield": {
         "name": "Stewart Butterfield",
         "type": "celebrity",
@@ -1648,6 +1695,11 @@ MET_GALA_ENTITIES = {
         "name": "Sudha Reddy",
         "type": "celebrity",
         "aliases": ["sudha reddy"],
+    },
+    "suki_waterhouse": {
+        "name": "Suki Waterhouse",
+        "type": "celebrity",
+        "aliases": ["suki waterhouse"],
     },
     "suleika_jaouad": {
         "name": "Suleika Jaouad",
@@ -1816,6 +1868,16 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["alexander mcqueen"],
     },
+    "alexander_wang": {
+        "name": "Alexander Wang",
+        "type": "designer_brand",
+        "aliases": ["alexander wang"],
+    },
+    "allen_jones": {
+        "name": "Allen Jones",
+        "type": "designer_brand",
+        "aliases": ["allen jones"],
+    },
     "altuzarra": {
         "name": "Altuzarra",
         "type": "designer_brand",
@@ -1831,10 +1893,20 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["armani", "giorgio armani"],
     },
+    "ashi_studio": {
+        "name": "Ashi Studio",
+        "type": "designer_brand",
+        "aliases": ["ashi studio", "ashi studios"],
+    },
     "asprey": {
         "name": "Asprey",
         "type": "designer_brand",
         "aliases": ["asprey"],
+    },
+    "awon_golding": {
+        "name": "Awon Golding",
+        "type": "designer_brand",
+        "aliases": ["awon golding"],
     },
     "badgley_mischka": {
         "name": "Badgley Mischka",
@@ -1904,12 +1976,17 @@ MET_GALA_ENTITIES = {
     "bulgari": {
         "name": "Bulgari",
         "type": "designer_brand",
-        "aliases": ["bulgari"],
+        "aliases": ["bulgari", "bvlgari"],
     },
     "burberry": {
         "name": "Burberry",
         "type": "designer_brand",
         "aliases": ["burberry"],
+    },
+    "burc_akyol": {
+        "name": "Burc Akyol",
+        "type": "designer_brand",
+        "aliases": ["burc akyol"],
     },
     "calvin_klein": {
         "name": "Calvin Klein",
@@ -1951,10 +2028,20 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["chloe", "chloé"],
     },
+    "chopard": {
+        "name": "Chopard",
+        "type": "designer_brand",
+        "aliases": ["chopard"],
+    },
     "christian_cowan": {
         "name": "Christian Cowan",
         "type": "designer_brand",
         "aliases": ["christian cowan"],
+    },
+    "christian_siriano": {
+        "name": "Christian Siriano",
+        "type": "designer_brand",
+        "aliases": ["christian siriano"],
     },
     "chrome_hearts": {
         "name": "Chrome Hearts",
@@ -1981,10 +2068,20 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["courreges", "courrèges"],
     },
+    "cult_gaia": {
+        "name": "Cult Gaia",
+        "type": "designer_brand",
+        "aliases": ["cult gaia"],
+    },
     "daks": {
         "name": "DAKS",
         "type": "designer_brand",
         "aliases": ["daks"],
+    },
+    "di_petsa": {
+        "name": "Di Petsa",
+        "type": "designer_brand",
+        "aliases": ["di petsa"],
     },
     "dior": {
         "name": "Dior",
@@ -2040,6 +2137,16 @@ MET_GALA_ENTITIES = {
         "name": "Gabriela Hearst",
         "type": "designer_brand",
         "aliases": ["gabriela hearst"],
+    },
+    "gap_studio": {
+        "name": "Gap Studio",
+        "type": "designer_brand",
+        "aliases": ["gap studio", "gap", "gap studio by zac posen"],
+    },
+    "giles_deacon": {
+        "name": "Giles Deacon",
+        "type": "designer_brand",
+        "aliases": ["giles deacon"],
     },
     "givenchy": {
         "name": "Givenchy",
@@ -2101,6 +2208,11 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["lacoste"],
     },
+    "le_silla": {
+        "name": "Le Silla",
+        "type": "designer_brand",
+        "aliases": ["le silla"],
+    },
     "loewe": {
         "name": "Loewe",
         "type": "designer_brand",
@@ -2136,6 +2248,11 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["marchesa"],
     },
+    "matieres_fecales": {
+        "name": "Matières Fécales",
+        "type": "designer_brand",
+        "aliases": ["matières fécales", "matieres fecales"],
+    },
     "max_mara": {
         "name": "Max Mara",
         "type": "designer_brand",
@@ -2145,6 +2262,16 @@ MET_GALA_ENTITIES = {
         "name": "Michael Kors",
         "type": "designer_brand",
         "aliases": ["michael kors"],
+    },
+    "miguel_castro_freitas": {
+        "name": "Miguel Castro Freitas",
+        "type": "designer_brand",
+        "aliases": ["miguel castro freitas"],
+    },
+    "miu_miu": {
+        "name": "Miu Miu",
+        "type": "designer_brand",
+        "aliases": ["miu miu"],
     },
     "moncler": {
         "name": "Moncler",
@@ -2156,10 +2283,20 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["moschino"],
     },
+    "mugler": {
+        "name": "Mugler",
+        "type": "designer_brand",
+        "aliases": ["mugler", "thierry mugler"],
+    },
     "mulberry": {
         "name": "Mulberry",
         "type": "designer_brand",
         "aliases": ["mulberry"],
+    },
+    "naila_opiangah": {
+        "name": "Naila Opiangah",
+        "type": "designer_brand",
+        "aliases": ["naila opiangah"],
     },
     "oscar_de_la_renta": {
         "name": "Oscar de la Renta",
@@ -2170,6 +2307,11 @@ MET_GALA_ENTITIES = {
         "name": "Paco Rabanne",
         "type": "designer_brand",
         "aliases": ["paco rabanne", "rabanne"],
+    },
+    "palomo_spain": {
+        "name": "Palomo Spain",
+        "type": "designer_brand",
+        "aliases": ["palomo spain"],
     },
     "prabal_gurung": {
         "name": "Prabal Gurung",
@@ -2211,6 +2353,11 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["schiaparelli"],
     },
+    "skims": {
+        "name": "Skims",
+        "type": "designer_brand",
+        "aliases": ["skims"],
+    },
     "stella_mccartney": {
         "name": "Stella McCartney",
         "type": "designer_brand",
@@ -2239,7 +2386,7 @@ MET_GALA_ENTITIES = {
     "tom_ford": {
         "name": "Tom Ford",
         "type": "designer_brand",
-        "aliases": ["tom ford"],
+        "aliases": ["tom ford", "tom ford by haider ackermann"],
     },
     "tommy_hilfiger": {
         "name": "Tommy Hilfiger",
@@ -2281,10 +2428,20 @@ MET_GALA_ENTITIES = {
         "type": "designer_brand",
         "aliases": ["vivienne westwood"],
     },
+    "whitaker_malem": {
+        "name": "Whitaker Malem",
+        "type": "designer_brand",
+        "aliases": ["whitaker malem"],
+    },
     "zac_posen": {
         "name": "Zac Posen",
         "type": "designer_brand",
         "aliases": ["zac posen"],
+    },
+    "zara": {
+        "name": "Zara",
+        "type": "designer_brand",
+        "aliases": ["zara"],
     },
 
 }
