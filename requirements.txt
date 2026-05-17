@@ -1,6 +1,7 @@
 pandas
-datetime
 langdetect
 networkx
 google-api-python-client
 pyvis
+nltk
+emoji
