@@ -2668,6 +2668,14 @@
         "aimé leon dore"
       ]
     },
+    "ami_paris": {
+      "name": "Ami Paris",
+      "type": "designer_brand",
+      "aliases": [
+        "ami paris",
+        "ami"
+      ]
+    },
     "akris": {
       "name": "Akris",
       "type": "designer_brand",
@@ -2696,13 +2704,6 @@
       "type": "designer_brand",
       "aliases": [
         "alexander wang"
-      ]
-    },
-    "allen_jones": {
-      "name": "Allen Jones",
-      "type": "designer_brand",
-      "aliases": [
-        "allen jones"
       ]
     },
     "altuzarra": {
@@ -3263,13 +3264,6 @@
         "michael kors"
       ]
     },
-    "miguel_castro_freitas": {
-      "name": "Miguel Castro Freitas",
-      "type": "designer_brand",
-      "aliases": [
-        "miguel castro freitas"
-      ]
-    },
     "miu_miu": {
       "name": "Miu Miu",
       "type": "designer_brand",
@@ -3304,13 +3298,6 @@
       "type": "designer_brand",
       "aliases": [
         "mulberry"
-      ]
-    },
-    "naila_opiangah": {
-      "name": "Naila Opiangah",
-      "type": "designer_brand",
-      "aliases": [
-        "naila opiangah"
       ]
     },
     "oscar_de_la_renta": {
