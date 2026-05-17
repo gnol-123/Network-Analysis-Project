@@ -6,3 +6,5 @@ pyvis
 nltk
 emoji
 matplotlib
+transformers
+torch
