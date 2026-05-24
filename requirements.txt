@@ -10,3 +10,8 @@ transformers
 torch
 itertools
 pyldavis
+numpy
+seaborn
+gensim
+wordcloud
+scikit-learn
