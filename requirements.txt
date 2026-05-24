@@ -23,3 +23,5 @@ wordcloud
 
 transformers
 torch
+itertools
+pyldavis
