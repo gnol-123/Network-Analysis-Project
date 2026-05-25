@@ -9,9 +9,11 @@ Conda is recommended. Use Python 3.10 or newer.
 ```bash
 conda create -n network-analysis python=3.11
 conda activate network-analysis
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 jupyter lab
 ```
+
+The package for `from dotenv import load_dotenv` is listed in `requirements.txt` as `python-dotenv`. Install it through the same `python -m pip install -r requirements.txt` command after activating the conda environment.
 
 To run the collection notebook, add a `.env` file in the project root:
 
